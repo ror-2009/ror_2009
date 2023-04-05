@@ -1,0 +1,57 @@
+<style>
+  select {
+    width: 200px; /* adjust as needed */
+    height: 50px; /* adjust as needed */
+    margin: auto; /* center horizontally */
+    display: block; /* make it a block element */
+    text-align: center; /* center the text inside */
+  }
+  textarea {
+    width: 400px; /* adjust as needed */
+    height: 200px; /* adjust as needed */
+    margin: auto; /* center horizontally */
+    display: block; /* make it a block element */
+    text-align: center; /* center the text inside */
+  }
+  button {
+    width: 200px; /* adjust as needed */
+    height: 50px; /* adjust as needed */
+    margin: auto; /* center horizontally */
+    display: block; /* make it a block element */
+    background-color: blue; /* set the background color to blue */
+    color: white; /* set the text color to white */
+    font-size: 20px; /* set the font size to 20px */
+    border: none; /* remove the border */
+    cursor: pointer; /* change the cursor to a pointer when hovering over the button */
+  }
+  button:hover {
+    background-color: #b30000; /* change the background color to a darker shade of red when hovering over the button */
+  }
+</style>
+<label for="genre">Choose a genre of a story:</label>
+<select id="genre" name="genre">
+  <option value="fantasy">Fantasy</option>
+  <option value="sci-fi">Science Fiction</option>
+  <option value="romance">Romance</option>
+  <option value="horror">Horror</option>
+  <option value="mystery">Mystery</option>
+  <option value="adventure">Adventure</option>
+  <option value="comedy">Comedy</option>
+  <option value="drama">Drama</option>
+  <option value="thriller">Thriller</option>
+  <option value="historical">Historical</option>
+</select>
+<br>
+<label for="length">Choose the number of pages for the story:</label>
+<select id="length" name="length">
+  <option value="10">10 pages</option>
+  <option value="20">20 pages</option>
+  <option value="30">30 pages</option>
+  <option value="40">40 pages</option>
+  <option value="50">50 pages</option>
+</select>
+<br>
+<label for="plot">Type the plot of the story:</label>
+<textarea id="plot" name="plot" placeholder="Enter plot here"></textarea>
+<br>
+<button id="generate" name="generate">Generate</button>
